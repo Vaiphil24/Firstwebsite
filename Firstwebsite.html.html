@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumbhipur Village</title>
+
+  <style>
+    /* Reset & Basics */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; line-height:1.6; }
+
+    /* Header */
+    header { display:flex; justify-content:space-between; align-items:center; background:#2e7d32; color:white; padding:10px 20px; }
+    header .logo { font-size:1.5rem; font-weight:bold; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav ul li a { color:white; text-decoration:none; }
+    .menu-toggle { display:none; font-size:1.5rem; background:none; border:none; color:white; cursor:pointer; }
+
+    /* Hero Section */
+    .hero { text-align:center; padding:100px 20px; background:#81c784; color:white; }
+    .hero .btn { display:inline-block; padding:10px 20px; background:#1b5e20; color:white; text-decoration:none; border-radius:5px; margin-top:20px; }
+    .hero .btn:hover { background:#145214; }
+
+    /* Quick Links */
+    .quick-links { display:flex; justify-content:center; flex-wrap:wrap; margin:40px 0; gap:20px; }
+    .quick-links .card { background:#e0f2f1; padding:30px 20px; border-radius:8px; width:200px; text-align:center; transition:transform 0.3s; }
+    .quick-links .card:hover { transform:scale(1.05); }
+
+    /* Footer */
+    footer { text-align:center; padding:20px; background:#2e7d32; color:white; }
+
+    /* Responsive Menu */
+    @media(max-width:768px){
+      nav ul { display:none; flex-direction:column; background:#2e7d32; position:absolute; top:60px; right:0; width:200px; }
+      nav ul.show { display:flex; }
+      .menu-toggle { display:block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Kumbhipur</div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home </a></https://1drv.ms/u/c/543f43bc5fb543c0/ESMFswEaujFHqkTKIK0Vx8MBLfye8XCzQsTE3uNC0ZkF-A?e=Ed2fXq>
+        <li><a href="about.html">About</a></https://1drv.ms/u/c/543f43bc5fb543c0/EVLMgrio9OlJtjs2Ja5F4T4BwTfOOCv3QDJjM-jVGKPuZg?e=r3hZtb>
+        <li><a href="services.html">Services</a></https://1drv.ms/u/c/543f43bc5fb543c0/Eam7HGwlt9VMjK67VlnLIOMBJ4PrV2k1y1eBEP7m3R8z_g?e=IqCLJm>
+        <li><a href="jobs.html">Jobs</a></https://1drv.ms/u/c/543f43bc5fb543c0/EfFw_K1u4iZKslehZUOeA18B_r-dXWHKj9AvBuvKNwv98g?e=XcfATV>
+        <li><a href="cafe.html">Cafe</a></https://1drv.ms/u/c/543f43bc5fb543c0/EZqZ644ZNT5LhTojSHWO0eMBbRE7iN_DrwRQ7VdLgIRMXA?e=LfsdmI>
+        <li><a href="contact.html">Contact</a></https://1drv.ms/u/c/543f43bc5fb543c0/EYTWByn3iF5HpVw73tHAQ8ABkfi_0w4X_ZDlm-6aaW-vGQ?e=uivPaq>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Kumbhipur Village</h1>
+    <p>Your village portal for services, jobs, and community.</p>
+    <a href="jobs.html" class="btn">Explore Jobs</a>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="quick-links">
+    <div class="card"><a href="jobs.html">Jobs</a></div>
+    <div class="card"><a href="services.html">Services</a></div>
+    <div class="card"><a href="cafe.html">Cafe</a></div>
+    <div class="card"><a href="contact.html">Contact</a></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kumbhipur Village. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
